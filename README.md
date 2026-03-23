@@ -3,19 +3,19 @@
 ## Installation
 
 ```bash
-brew install coollabsio/coolify/coolify
+brew install coollabsio/coolify-cli/coolify-cli
 ```
 
 ## Upgrade
 
 ```bash
-brew upgrade coolify
+brew upgrade coolify-cli
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall coolify
+brew uninstall coolify-cli
 ```
 
 ## More Information
