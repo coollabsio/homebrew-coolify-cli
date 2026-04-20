@@ -5,21 +5,21 @@
 class CoolifyCli < Formula
   desc "CLI tool for interacting with the Coolify API"
   homepage "https://coolify.io"
-  version "1.6.1"
+  version "1.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.1/coolify-cli_1.6.1_darwin_amd64.tar.gz"
-      sha256 "0d4d772339bef66e7ed194de968adc010f8cac02117c1c868d97464f5f99dd73"
+      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.2/coolify-cli_1.6.2_darwin_amd64.tar.gz"
+      sha256 "77039532a4bc887ee21bfd13fc03131fadb9d765fed120b5c881d2ab38ef9276"
 
       define_method(:install) do
         bin.install "coolify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.1/coolify-cli_1.6.1_darwin_arm64.tar.gz"
-      sha256 "898163dc17e299942e6e37c5e12c19b76fa2e5feda30e60ac8a7787f3c336c29"
+      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.2/coolify-cli_1.6.2_darwin_arm64.tar.gz"
+      sha256 "734c79a8e57db23125b35fe662d909e2953dcbd90f9720fa23549bb84e197e7b"
 
       define_method(:install) do
         bin.install "coolify"
@@ -29,15 +29,15 @@ class CoolifyCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.1/coolify-cli_1.6.1_linux_amd64.tar.gz"
-      sha256 "f1a6f6ad80ceafd73318a0e14ae9a20ed81b7685ccca6a4f94d6494399b38e18"
+      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.2/coolify-cli_1.6.2_linux_amd64.tar.gz"
+      sha256 "269b131ebeebc41bc8889d3f76fdf2704d0261f3d77414232d700b8255f67ea5"
       define_method(:install) do
         bin.install "coolify"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.1/coolify-cli_1.6.1_linux_arm64.tar.gz"
-      sha256 "23fc5ea18228e527dcc41d64e847687aabb6629039c57410baaf345026468d49"
+      url "https://github.com/coollabsio/coolify-cli/releases/download/v1.6.2/coolify-cli_1.6.2_linux_arm64.tar.gz"
+      sha256 "a2d1eaec534c0c0eca2c2a3dbff7eabb3b716d5b26f36c635fb46b6ab228bcee"
       define_method(:install) do
         bin.install "coolify"
       end
